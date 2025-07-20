@@ -1,0 +1,104 @@
+1-WAQTD number of employees getting salary less than 2000 in dept no 10
+SELECT COUNT(*)
+FROM EMP
+WHERE SAL>2000 AND DEPTNO=10;
+
+2-WAQTD total salary needed to pay employees working as CLERK
+
+SELECT SUM(SAL)
+FROM EMP
+WHERE JOB='CLERK';
+
+WAQTD average salary needed to pay all employees
+SELECT AVG(SAL)
+FROM EMP;
+
+WAQTD number of employees having 'A' as their first character
+SELECT COUNT(*)
+FROM EMP
+WHERE ENAME LIKE 'A%';
+
+WAQTD number of employees working as CLERK or MANAGER
+SELECT COUNT(*) 
+FROM EMP 
+WHERE JOB IN ('CLERK', 'MANAGER');
+
+
+WAQTD total salary needed to pay employees hired in FEB
+SELECT SUM(SAL) 
+FROM EMP 
+WHERE TO_CHAR(HIREDATE, 'MM') = '02';
+
+
+WAQTD number of employees reporting to 7839 (MGR)
+
+WAQTD number of employees getting commission in dept no 3
+0
+
+SELECT COUNT(*) 
+FROM EMP 
+WHERE COMM IS NOT NULL AND DEPTNO = 30;
+
+WAQTD average salary, total salary, number of employees and maximum salary given to employees working as PRESIDENT
+
+SELECT AVG(SAL), SUM(SAL), COUNT(*), MAX(SAL) 
+FROM EMP 
+WHERE JOB = 'PRESIDENT';
+
+
+WAQTD number of employees having 'A' in their names
+SELECT COUNT(*) 
+FROM EMP 
+WHERE ENAME LIKE '%A%';
+
+
+
+WAQTD number of departments present in employee table
+SELECT COUNT(*)
+FROM EMP
+WHERE DEPTNO IS NOT NULL;
+
+WAQTD number of employees having character 'Z' in their names
+SELECT COUNT(*) 
+FROM EMP 
+WHERE ENAME LIKE '%Z%';
+
+WAQTD number of employees and total salary needed to pay the employees who have 2 consecutive L's in their names
+
+SELECT COUNT(*), SUM(SAL) 
+FROM EMP 
+WHERE ENAME LIKE '%LL%';
+
+
+
+WAQTD number of employees having '$' in their names
+
+
+
+WAQTD total salary given to employees working as CLERK in dept 30
+SELECT SUM(SAL)
+FROM EMP
+WHERE JOB='CLERK'AND DEPTNO=30;
+
+WAQTD maximum salary given to the employees working as ANALYST
+ SELECT SUM(SAL)
+ FROM EMP
+ WHERE JOB='ANALYST';
+
+WAQTD number of distinct salaries present in employee table
+
+WAQTD number of jobs present in employee table
+
+SELECT COUNT(*)
+FROM EMP
+WHERE JOB IS NOT NULL;
+
+WAQTD average salary given to the CLERK
+SELECT AVG(SAL)
+FROM EMP
+WHERE JOB ='CLERK';
+
+WAQTD minimum salary given to the employees who work in dept 10 as MANAGER or CLERK
+SELECT MIN(SAL) 
+FROM EMP 
+WHERE DEPTNO = 10 AND JOB IN ('MANAGER', 'CLERK');
