@@ -1,0 +1,3 @@
+SELECT SAL
+FROM EMP
+/
