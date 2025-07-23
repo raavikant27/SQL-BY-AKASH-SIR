@@ -1,8 +1,5 @@
-### 📋 SQL Query Questions – MAX / MIN Based
-WAQTD = Write A Query To Display
-
-### 🔼 Maximum-Based Questions
- # WAQTD name of the employee earning maximum salary
+🔼 Maximum-Based Questions
+WAQTD name of the employee earning maximum salary
 
 WAQTD name, salary, and commission of the employee earning maximum commission
 
@@ -19,7 +16,8 @@ WAQTD details of the employees having the least hiredate
 
 WAQTD details of the employees earning least annual salary
 
-⏳ Hire Date Based
+ Hire Date Based
 WAQTD name and hiredate of the employee hired before all the employees (first emp)
 
 WAQTD name and hiredate of the employees hired at the last
+
