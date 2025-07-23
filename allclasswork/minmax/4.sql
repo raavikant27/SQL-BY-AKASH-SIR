@@ -1,0 +1,1 @@
+-- WAQTD name and annual salary of the employees if their annual salary is more than all the salesman
