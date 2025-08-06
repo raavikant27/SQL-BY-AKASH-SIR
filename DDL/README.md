@@ -71,5 +71,76 @@ Rename tables
 
 Add or drop columns
 
+```
+
 Modify column data types
+ ```
+ DESC EMPLOYEES;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMP_ID                                    NOT NULL NUMBER(38)
+ NAME                                               VARCHAR2(50)
+ DESIGNATION                                        VARCHAR2(50)
+ SALARY                                             NUMBER(10,2)
+ COMMISSION                                         NUMBER(10,2)
+
+
+ALTER TABLE EMPLOYEES MODIFY NAME VARCHAR2(12);
+
+Table altered.
+DESC EMPLOYEES;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -----------------
+ EMP_ID                                    NOT NULL NUMBER(38)
+ NAME                                               VARCHAR2(12)
+ DESIGNATION                                        VARCHAR2(50)
+ SALARY                                             NUMBER(10,2)
+ COMMISSION                                         NUMBER(10,2)
+
+ ```
+```
+TUCNCATE- IT IS USED TO EMOVE ALL RECORD FROM THE TABLE PERMAT
+ TRUNCATE TABLE EMPLOYEES;
+
+Table truncated.
+```
+```
+DROP-
+DROP TABLE EMPLOYEES;
+
+Table dropped.
+```
+```
+RECOVER THE TABLE
+
+FLASHBACK TABLE EMPLOYEES TO BEFORE DROP;
+
+Flashback complete.
+ TO DELATE A TABLE PERMANANTALTY
+
+DESC EMPLOYEE;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ---------------------
+ EMPLOYEE_ID                               NOT NULL NUMBER(38)
+ NAME                                               VARCHAR2(50)
+ DEPARTMENT                                         VARCHAR2(30)
+ SALARY                                             NUMBER(10,2)
+
+DROP TABLE EMPLOYEE;
+
+Table dropped.
+
+PURGE TABLE EMPLOYEE;
+
+Table purged.
+
+SELECT * FROM TAB;
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+EMP                            TABLE
+BONUS                          TABLE
+SALGRADE                       TABLE
+STUDENT                        TABLE
+DEPARTMANET                    TABLE
 ```
